@@ -26,7 +26,8 @@ func main() {
 				Name:    "config",
 				Aliases: []string{"c"},
 				Usage:   "Path to the configuration file",
-				Value:   "app.ini",
+				// Changed default to nginx-ui.ini to avoid collision with other app.ini files
+				Value:   "nginx-ui.ini",
 				EnvVars: []string{"NGINX_UI_CONFIG"},
 			},
 		},
